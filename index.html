@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>mountain environment</title>
+  </head>
+
+  <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  <script src="https://rawgit.com/Ctrl-Alt-Zen/aframe-mobile-controls/master/components/twoway-motion/twoway-motion.js"></script>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="sky" src="https://Josh-Elliott.github.io/low-poly-vr/vr_assets/clear_sky.png" crossorigin="anonymous"/>
+      </a-assets>
+
+     <a-sky
+        id="background"
+        color="blue"
+      ></a-sky>
+
+      <a-gltf-model src="https://Josh-Elliott.github.io/low-poly-vr/vr_assets/mountains.glb" 
+              gltf-model="https://Josh-Elliott.github.io/low-poly-vr/vr_assets/mountains.glb" rotation="0 -30 0">
+      </a-gltf-model>
+      
+    </a-scene>
+  </body>
+</html>
